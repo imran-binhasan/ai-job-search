@@ -1,85 +1,61 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Imran Bin Hasan
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
-1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
-2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
-3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
-4. **Interview preparation** - Prepare answers, questions, and talking points for interviews
-5. **Career strategy** - Advise on positioning and personal branding
+This repo is a job application workspace. opencode acts as a career advisor and application assistant for Imran, helping with:
+1. **Job fit evaluation** - Assess job postings against your profile (skills, experience)
+2. **CV tailoring** - Adapt CV templates to target specific roles
+3. **Cover letter writing** - Draft targeted cover letters
+4. **Interview preparation** - Prepare answers, questions, talking points
+5. **Career strategy** - Advise on positioning
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Imran Bin Hasan
+- **Email:** imranbinhasan.work@gmail.com
+- **LinkedIn:** linkedin.com/in/imran-binhasan
+- **GitHub:** github.com/imran-binhasan
+- **Location:** Dhaka, Bangladesh
+- **Languages:** Bengali, English
+- **Status:** Currently employed, actively looking
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BSc in CSE** (2024-2027, Weekend) - **Presidency University** (CGPA 3.69/4.00)
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Fullstack AI Developer** (Jan 2026 - Present) - **Coredevs Ltd**
+  - Led MVP development of a geospatial sports app for a YC-backed startup; delivered full product from architecture to deployment
+  - Engineered microservice-based, config-driven algo trading system in Node.js (Binance, Bybit, Alpaca) — <50ms order-to-fill latency, strategy backtesting, multi-instance live execution
+- **Software Engineer (Backend)** (Mar 2025 - Dec 2025) - **AppifyDevs**
+  - Architected enterprise HRMS handling payroll for 2000+ employees across 10+ countries
+  - Delivered 5+ e-commerce/SaaS products (AI chat, payments, analytics dashboards)
+  - Rebuilt IJRP academic journal platform — 4000+ submissions, peer-review workflow
+- **Junior Fullstack Developer** (Jun 2024 - Feb 2025) - **Qwik IT**
+  - Built e-commerce platforms, landing pages, admin dashboards
+  - Contributed to enterprise SaaS for talent optimization
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Languages:** TypeScript, JavaScript, Python, Go
+- **Backend:** Node.js, NestJS, Express.js, FastAPI, GraphQL, Socket.io, RabbitMQ, gRPC
+- **Frontend:** Next.js, React.js, React Native, Expo, Tailwind CSS, Redux Toolkit, Tanstack Query
+- **Database:** PostgreSQL, MySQL, MongoDB, Redis, VectorDBs
+- **DevOps & Cloud:** AWS, Docker, GitHub Actions, CI/CD, Nginx, Traefik
+- **Other:** Multiple ORMs (Prisma, Drizzle, TypeORM, Sequelize, GORM), microservices architecture, AI/LLM integration, system design
 
-### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
-
-### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
-
-### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+### Projects
+- **Unirift** - AI-native personal productivity platform built with 9 microservices (Go, Python, TypeScript), custom ReAct agent loop with 2M-token context management, semantic ingestion pipeline, LLM routing via self-hosted LiteLLM across 20+ models
+- **WarpDB** - Hybrid in-memory/persistent KV store in Go; 250k+ req/sec, goroutine-based concurrency, ACID-safe writes, pluggable storage engine
+- **MegaMart** - Multi-vendor e-commerce platform; dynamic RBAC, RabbitMQ async workflows, Redis caching, NestJS + PostgreSQL, SSLCommerz/bKash/Stripe/PayPal integration
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
-
-### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- **BD IT Companies:** Fullstack/Backend/AI developer roles at the 500+ tracked Bangladeshi companies
+- **Remote:** Node.js/NestJS/Next.js backend or fullstack roles
+- **Fintech/EdTech/SaaS:** Product companies using TypeScript, Node.js, React
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
-- `.claude/skills/` - AI skill definitions for the application workflow
+- `.opencode/skills/` - AI skill definitions for the application workflow
 - `.agents/skills/` - Job search CLI tools
 
 ## Workflow for New Job Applications
@@ -95,7 +71,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 After creating or updating a CV or cover letter, re-read the generated file and verify **all** of the following before presenting to the user. Report the results as a pass/fail checklist.
 
 ### Factual accuracy
-- [ ] All claims match actual profile (CLAUDE.md / candidate profile) - no fabricated skills, experience, or achievements
+- [ ] All claims match actual profile (AGENTS.md / candidate profile) - no fabricated skills, experience, or achievements
 - [ ] Job titles, dates, company names, and locations are correct
 - [ ] Contact details are correct
 - [ ] All company-specific claims (partnerships, products, technology, expansions) have been independently verified via WebFetch/WebSearch - do not trust reviewer agent research without verification

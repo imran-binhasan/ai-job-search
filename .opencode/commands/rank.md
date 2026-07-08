@@ -1,3 +1,8 @@
+---
+description: Batch-scores scraped jobs against the fit framework and returns a ranked shortlist so the user can decide where to spend /apply effort.
+agent: general
+---
+
 # /rank - Triage Scraped Jobs into a Ranked Shortlist
 
 You are batch-scoring the jobs that `/scrape` has collected, so the user can decide where to spend `/apply` effort. `/scrape` finds and dedupes postings; `/apply` evaluates one at a time in depth. `/rank` is the bridge: it scores every new posting against the fit framework and returns a ranked shortlist.
@@ -26,8 +31,8 @@ Follow these steps **in order**.
 3. Select candidates: entries with status `new` (or all non-applied entries with `--all`), minus the exclusion set, filtered by the focus area if one was given.
 4. If no candidates remain, say so ("Nothing new to rank - run /scrape to find fresh postings") and stop.
 5. Read the scoring framework and profile **once**:
-   - `.claude/skills/job-application-assistant/04-job-evaluation.md`
-   - `.claude/skills/job-application-assistant/01-candidate-profile.md`
+   - `.opencode/skills/job-application-assistant/04-job-evaluation.md`
+   - `.opencode/skills/job-application-assistant/01-candidate-profile.md`
 
 State how many jobs will be ranked before proceeding.
 
